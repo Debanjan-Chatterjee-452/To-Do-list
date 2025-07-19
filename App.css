@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f; /* Soft slate black */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #2a2a3d; /* Slightly lighter slate black */
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 2px solid #00cfff; /* Aqua blue */
+    box-shadow: 0 0 10px rgba(0, 207, 255, 0.3);
+    width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00cfff; /* Aqua blue title */
+
+    text-shadow: 0 0 8px rgba(0, 207, 255, 0.6);
+
+  }
+  
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00cfff;
+    background-color: #1e1e2f;
+    color: #fff;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #00cfff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  /* Hover style for Add Task button */
+  form button:hover {
+    background-color: #38e5ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #38e5ff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #2f2f45;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #00cfff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  /* Completed task style */
+  li.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Delete button */
+  li button {
+    background-color: transparent;
+    border: 2px solid #00cfff;
+    color: #00cfff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  /* Hover style for Delete button */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+  }
+  
+  li button:hover {
+    background-color: #38e5ff;
+    color: #1e1e2f;
+    animation: shake 0.3s ease;
+  }
+  input[type="text"]:hover {
+    box-shadow: 0 0 6px #38e5ff;
+  }
+  li:hover {
+    background-color: #3a3a50;
+    box-shadow: 0 0 6px #38e5ff;
+    transition: all 0.3s ease;
+  }
